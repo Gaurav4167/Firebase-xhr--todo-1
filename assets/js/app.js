@@ -65,7 +65,7 @@ function createTodo(eve) {
             let ul = document.createElement("ul")
             ul.id = res.name
             ul.className = "list-group mb-2";
-            ul.innerHTML = `  <li class="list-group-item d-flex justify-content-between align-item-center"><img id="flower-img" src="./assets/images/flower2.png" alt=""><strong> ${newTodo.todo} </strong>
+            ul.innerHTML = `  <li class="list-group-item d-flex justify-content-between align-item-center"><strong> ${newTodo.todo} </strong>
                         <div>
                             <i onClick="editTodo(this)" id="editBtn" role="button" class="fa-solid fa-pen-to-square text-primary"></i>
                             <i onClick="removeTodo(this)" id="deleteBtn" role="button" class="fa-solid fa-trash-can text-danger ml-4"></i>
